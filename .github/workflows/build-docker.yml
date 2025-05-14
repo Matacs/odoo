@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: curucuteo/odoo:latest
+          tags: curucuteo/odoo-cocinadmin:latest
