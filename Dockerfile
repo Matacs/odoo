@@ -11,4 +11,5 @@ COPY odoo.conf /etc/odoo/odoo.conf
 EXPOSE 8069
 
 # Comando para iniciar Odoo
-CMD ["odoo", "-c", "/etc/odoo/odoo.conf"]
+CMD ["odoo"]
+
