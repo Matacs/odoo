@@ -3,11 +3,12 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - 18.0
+      - 18.0  # porque ese es tu branch actual
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    environment: DOCKERHUB  # 👈 pon aquí el nombre exacto de tu environment
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -26,4 +27,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: curucuteo/odoo-cocinadmin:18.0
+          tags: curucuteo/odoo-cocinadmin:latest
+
